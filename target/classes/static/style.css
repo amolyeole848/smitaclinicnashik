@@ -1,0 +1,306 @@
+body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; position: relative; }
+a { text-decoration: none; }
+h2 { font-weight: 700; margin-bottom: 1rem; }
+p.lead { color: #6c757d; }
+.section { padding: 80px 0; }
+.bg-light-custom { background-color: #f8f9fa; }
+
+/* Navbar */
+.navbar { background-color: #447dd4; }
+.navbar .nav-link { color: white !important; font-weight: 500; }
+.navbar .nav-link:hover { color: #ffc107 !important; }
+
+.navbar {
+    background-color: #0066cc; /* Dental blue theme */
+}
+
+/* Hero */
+/* Hero Section */
+.hero {
+  background: url('https://asiandentalhospital.com/wp-content/uploads/2023/05/4-ASIAN-DENTAL-CLINIC-AMBIENCE-WEB-SLIDER.jpg') 
+              no-repeat center center/cover;
+  height: 100vh; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  text-align: center; 
+  color: white; 
+  position: relative;
+}
+
+.hero::after { 
+  content: ''; 
+  position: absolute; 
+  inset: 0; 
+  background: rgba(0,0,0,0.45); /* Dark overlay for readability */
+}
+
+.hero-content { 
+  position: relative; 
+  z-index: 1; 
+  opacity: 0; 
+  transform: translateY(20px); 
+  transition: all 1s ease-out; 
+}
+
+.hero-content.show { 
+  opacity: 1; 
+  transform: translateY(0); 
+}
+
+.hero h1 { 
+  font-size: 3rem; 
+  font-weight: bold; 
+}
+
+.hero p { 
+  font-size: 1.25rem; 
+  margin-bottom: 1.5rem; 
+}
+
+/* Hero Button */
+.hero .btn {
+  background: #ffc107;        /* Bright dental yellow */
+  color: #000;               /* Black text for contrast */
+  font-weight: 600;          /* Semi-bold */
+  padding: 12px 32px;        /* Comfortable padding */
+  border-radius: 50px;       /* Rounded pill shape */
+  font-size: 1.1rem;         /* Slightly bigger text */
+  letter-spacing: 0.5px;     /* Spacing for elegance */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* Soft shadow */
+  transition: all 0.3s ease; /* Smooth hover */
+  border: none;              /* Clean look */
+  cursor: pointer;
+}
+
+.hero .btn:hover {
+  background: #e0a800;       /* Slightly darker yellow */
+  transform: translateY(-3px) scale(1.05); /* Subtle lift */
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+
+/* Treatments Section */
+.section h2 {
+  font-weight: 700;
+  color: #0d6efd;
+  margin-bottom: 1rem;
+}
+
+.section .lead {
+  color: #555;
+}
+
+/* Treatment Cards */
+.card-custom {
+  background: #fff;
+  border-radius: 16px;
+  border: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  text-align: center;
+}
+
+.card-custom:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Treatment Images */
+.card-custom img {
+  width: 100%;
+  height: 130px; /* fixed uniform height */
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Card Title */
+.card-custom h5 {
+  margin-top: 1rem;
+  font-weight: 600;
+  color: #0d6efd;
+}
+
+/* Card Text */
+.card-custom p {
+  color: #666;
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+}
+
+/* Fade-in effect */
+.fade-card {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.fade-card:nth-child(1) { animation-delay: 0.1s; }
+.fade-card:nth-child(2) { animation-delay: 0.2s; }
+.fade-card:nth-child(3) { animation-delay: 0.3s; }
+.fade-card:nth-child(4) { animation-delay: 0.4s; }
+.fade-card:nth-child(5) { animation-delay: 0.5s; }
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Awards Section */
+.awards-section {
+  padding: 80px 0;
+}
+
+.awards-section h2 {
+  font-weight: bold;
+  color: #0d6efd; /* Bootstrap primary blue */
+}
+
+.award-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.award-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.award-img {
+  width: 250px;
+  height: 200px;
+  object-fit: contain;   /* Keeps proportion */
+  display: block;
+  margin: 0 auto 15px;
+  background: #f8f9fa;   /* Light background for consistency */
+  border-radius: 50%;    /* Circular badge look */
+  padding: 12px;
+}
+
+/* Cards */
+.card-custom { border: none; border-radius: 1rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s; opacity: 0; transform: translateY(20px); }
+.card-custom:hover { transform: translateY(-5px); box-shadow: 0 8px 30px rgba(0,0,0,0.15); }
+.fade-in { opacity: 1 !important; transform: translateY(0) !important; transition: all 0.8s ease-out; }
+
+/* Doctors */
+.doc-img { width: 150px; height: 150px; object-fit: cover; border-radius: 50%; margin-bottom: 1rem; }
+
+/* Forms */
+.form-control:focus { box-shadow: 0 0 0 0.25rem rgba(13,110,253,0.25); }
+
+/* Footer */
+.footer-section {
+  background-color: #0d6efd;
+  padding: 40px 0;
+  color: white;
+}
+
+.footer-section a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-section h5 {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.footer-section p {
+  margin-bottom: 0.5rem;
+}
+
+
+/* Sticky Appointment Button */
+#stickyBook {
+  position: fixed; bottom: 20px; right: 20px; z-index: 1000; background: #ffc107;
+  color: #000; border: none; padding: 0.8rem 1.2rem; border-radius: 50px;
+  font-weight: bold; box-shadow: 0 4px 15px rgba(0,0,0,0.2); transition: transform 0.3s;
+}
+#stickyBook:hover { transform: scale(1.1); }
+
+.floating-btn { position: fixed; left: 20px; z-index: 1000; transition: transform 0.3s; }
+.wa-btn { bottom: 80px; width:60px; height:60px; }
+.call-btn { bottom: 20px; width:50px; height:60px; }
+
+@media (max-width: 768px) { .hero h1 { font-size: 2rem; } .hero p { font-size: 1rem; } }
+.floating-btn img {
+  width: 60px;
+  height: 60px;
+}
+
+.wa-btn { bottom: 80px; }
+.call-btn { bottom: 20px; }
+
+.contact-bg {
+    background: linear-gradient(135deg, #e3f2fd 0%, #fff 100%);
+    padding: 60px 0;
+}
+
+.fade-card {
+    transition: box-shadow 0.2s;
+}
+
+.fade-card:hover {
+    box-shadow: 0 8px 32px rgba(33, 150, 243, 0.15);
+}
+
+.bg-white {
+    background: #fff;
+}
+
+.btn-primary {
+    background-color: #1976d2;
+    border-color: #1976d2;
+    font-weight: bold;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    transition: background 0.2s;
+}
+.btn-primary:hover {
+    background-color: #1565c0;
+    border-color: #1565c0;
+}
+
+
+.floating-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: #25D366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+  z-index: 9999;
+  cursor: pointer;
+}
+
+.floating-btn img {
+  width: 30px;
+  height: 30px;
+}
+
+.wa-btn {
+  bottom: 90px; /* keeps WhatsApp above Call button */
+}
+
+.call-btn {
+  background-color: #0d6efd; /* Bootstrap blue */
+}
+
+#contact {
+  min-height: 100vh;
+  padding: 80px 20px; /* keeps spacing from top */
+  background: #f8fbff;
+}

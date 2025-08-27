@@ -1,0 +1,7 @@
+com\dentalcare\DentalCareApplication.class
+com\dentalcare\repository\AppointmentRepository.class
+com\dentalcare\service\AppointmentService.class
+com\dentalcare\config\CorsConfig.class
+com\dentalcare\controller\AppointmentController.class
+com\dentalcare\entity\Appointment.class
+com\dentalcare\service\AppointmentServiceImpl.class
